@@ -8,11 +8,11 @@ const resultRoutes = require('./routes/resultRoutes');
 const app = express();
 app.use(express.json());
 app.use(cors(
-  // {
-  //   origin: ["https://deploy-vercel-umber.vercel.app/quiz"],
-  //   methods: ["POST","GET"],
-  //   credentials: true
-  // }
+  {
+    origin: ["https://deploy-vercel-xjqj.vercel.app"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
 ));
 
 mongoose
