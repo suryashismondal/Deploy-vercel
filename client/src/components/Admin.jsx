@@ -9,7 +9,7 @@ const Admin = () => {
   const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    await axios.post('http://localhost:3001/api/questions', {
+    await axios.post('https://deploy-vercel-snowy-nine.vercel.app/api/questions', {
       question,
       option: option.split(',').map(opt => opt.trim()),
       correctAnswer

@@ -31,5 +31,5 @@ app.use('/api/questions', questionRoutes);
 app.use('/api/results',resultRoutes);
 
 app.listen(3001, () => {
-  console.log("Server listening on http://localhost:3001");
+  console.log("Server listening on https://deploy-vercel-snowy-nine.vercel.app/");
 });

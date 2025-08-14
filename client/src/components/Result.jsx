@@ -11,7 +11,7 @@ function Result  () {
   const percentage = (score / total) * 100;
 
   useEffect(() => {
-    axios.post('http://localhost:3001/api/results', {
+    axios.post('https://deploy-vercel-snowy-nine.vercel.app/api/results', {
       score,
       total
     }).then(() => {

@@ -10,7 +10,7 @@ const Quiz = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/questions')
+    axios.get('https://deploy-vercel-snowy-nine.vercel.app/api/questions')
       .then((res) => setQuestions(res.data))
       .catch((err) => console.error(err));
   }, []);
